@@ -1,0 +1,259 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+  border: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+body {
+  width: 100vw;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(90deg, rgb(62, 62, 62), rgb(25, 25, 25));
+
+  @media (max-width: 767.98px) {
+    font-size: 14px;
+  }
+}
+
+#navbar {
+  width: 100%;
+  min-height: 80px;
+  background-color: rgb(205, 50, 102);
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 1.5em;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #1f1f1f;
+
+  @media (max-width: 767.98px) {
+    padding: 0 15px;
+    font-size: 1.2em;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  padding: 30px 30px;
+  @media (max-width: 767.98px) {
+    padding: 0 15px;
+  }
+}
+
+.nav-item:hover {
+  background-color: rgb(36, 2, 186);
+}
+
+.nav-item:active {
+  background-color: rgb(39, 1, 120);
+  color: rgb(255, 255, 255, 0.3);
+}
+
+main {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.welcome-section {
+  background: linear-gradient(90deg, rgb(62, 62, 62), rgb(25, 25, 25));
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 767.98px) {
+    height: 400px;
+    padding-top: 100px;
+  }
+}
+
+.title {
+  font-size: 3.4em;
+  padding-bottom: 20px;
+
+  @media (max-width: 767.98px) {
+    font-size: 2em;
+  }
+}
+
+.subtitle {
+  color: #a52a2a;
+  font-size: 2em;
+  font-weight: 100;
+  font-style: italic;
+
+  @media (max-width: 767.98px) {
+    font-size: 1.2em;
+  }
+}
+
+.projects {
+  padding: 100px 0;
+  background-color: rgb(48, 121, 170);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects__title {
+  font-size: 2.3em;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+
+  @media (max-width: 767.98px) {
+    font-size: 1.5em;
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.project-tile {
+  flex: 0 1 26%;
+  height: 400px;
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.project-tile img {
+  height: 75%;
+  background-color: aliceblue;
+}
+
+.profile-link__title {
+  padding: 20px 0;
+}
+
+a .code {
+  color: rgb(41, 41, 41);
+}
+
+a:hover .code {
+  color: orangered;
+  transition: color 0.3s ease-out;
+}
+
+.button {
+  padding: 10px 0;
+  background-color: rgb(41, 41, 41);
+  color: #fff;
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a .code-button {
+  margin-left: 10px;
+  position: absolute;
+}
+
+a:hover .code-button {
+  transform: translateX(5px);
+  transition: transform 0.2s ease-out;
+}
+
+#Contact {
+  padding: 203px 0;
+  text-align: center;
+  background: linear-gradient(90deg, rgb(62, 62, 62), rgb(25, 25, 25));
+}
+
+.Contact__subtitle {
+  color: #fff;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.social {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  justify-content: center;
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+.social__link img {
+  width: 30px;
+  height: 30px;
+}
+
+.social__link:hover {
+  transform: translateY(10px);
+  transition: transform 0.2s ease-out;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 5px solid #a52a2a;
+  padding: 55px 0;
+  background: linear-gradient(90deg, rgb(62, 62, 62), rgb(25, 25, 25));
+}
